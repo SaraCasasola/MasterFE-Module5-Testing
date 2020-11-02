@@ -25,7 +25,7 @@ describe('Login specs', () => {
         // Arrange
         const user = 'admin';
         const password = '1234';
-        const errorMessage = 'Usuario y/o passssword no válidos';
+        const errorMessage = 'Usuario y/o password no válidos';
 
         // Act
         cy.visit('/');
@@ -57,7 +57,7 @@ describe('Login specs', () => {
         cy.findByRole('button', { name: 'Login' }).click();
 
         // Assert
-        cy.url().should('eq', 'http://localhost:8080/#/submssodule-list');
+        cy.url().should('eq', 'http://localhost:8080/#/submodule-list');
 
     });
 })
