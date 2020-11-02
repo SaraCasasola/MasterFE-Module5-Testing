@@ -25,7 +25,7 @@ describe('Login specs', () => {
         // Arrange
         const user = 'admin';
         const password = '1234';
-        const errorMessage = 'Usuario y/o password no válidos';
+        const errorMessage = 'Usuario y/o passssword no válidos';
 
         // Act
         cy.visit('/');
@@ -42,7 +42,7 @@ describe('Login specs', () => {
         cy.findByRole('alert').should('include.html', errorMessage);
     });
 
-    it('should navigate to submodel list whentype valid credentials', () => {
+    it('should navigate to submodel list when type valid credentials', () => {
         // Arrange
         const user = 'admin';
         const password = 'test';
@@ -57,7 +57,7 @@ describe('Login specs', () => {
         cy.findByRole('button', { name: 'Login' }).click();
 
         // Assert
-        cy.url().should('eq', 'http://localhost:8080/#/submodule-list');
+        cy.url().should('eq', 'http://localhost:8080/#/submssodule-list');
 
     });
 })
